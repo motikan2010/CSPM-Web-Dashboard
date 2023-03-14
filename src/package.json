@@ -1,14 +1,28 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host",
         "build": "vite build"
     },
     "devDependencies": {
+        "@mdi/font": "^7.1.96",
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.0.0",
         "axios": "^1.1.2",
+        "bootstrap": "^5.2.3",
         "laravel-vite-plugin": "^0.7.2",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
-        "vite": "^4.0.0"
+        "sass": "^1.56.1",
+        "vite": "^4.0.0",
+        "vue": "^3.2.47"
+    },
+    "dependencies": {
+        "diff2html": "^3.4.31",
+        "diff2html-cli": "^5.2.9",
+        "pinia": "^2.0.30",
+        "vite-plugin-vuetify": "^1.0.2",
+        "vue-router": "^4.0.13",
+        "vuetify": "^3.1.3"
     }
 }

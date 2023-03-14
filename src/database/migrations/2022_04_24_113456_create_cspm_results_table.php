@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class  extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('cspm_results', function (Blueprint $table) {
+            $table->string('cloud_id', 32);
+            $table->string('exec_date', 32);
+            $table->string('plugin', 32);
+            $table->string('category', 32);
+            $table->string('title');
+            $table->string('description');
+            $table->string('resource');
+            $table->string('region', 16);
+            $table->string('status', 8);
+            $table->string('message', 512);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('cspm_results');
+    }
+};

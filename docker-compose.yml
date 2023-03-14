@@ -8,6 +8,11 @@ services:
       context: .
       dockerfile: ./infra/docker/php/Dockerfile
       target: ${APP_BUILD_TARGET:-development}
+    ports:
+      - target: 5173
+        published: 5173
+        protocol: tcp
+        mode: host
     volumes:
       - type: bind
         source: ./src

@@ -1,3 +1,9 @@
 *
 !public/
+!cspm_result/
+!cspm_collection/
+!cspm_collection_2/
+!cspm_diff/
+!cspm_diff_html/
 !.gitignore
+
