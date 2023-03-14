@@ -1,19 +1,16 @@
 # CSPM Dashboard
 
+<img src="https://user-images.githubusercontent.com/3177297/225024533-d82498f3-5505-4c27-b89b-f7b8584f44df.png" width="600px">
+<img src="https://user-images.githubusercontent.com/3177297/225024552-390ad6eb-3125-45c8-b2ae-88568481cc01.png" width="600px">
+
+## Command
+
 ```
 make app 
 
     docker compose exec app php artisan cspm:load --all
 
     php artisan cspm:create_collection_diff
-```
-
-## Build
-
-### Front
-
-```
-
 ```
 
 ## Docs
